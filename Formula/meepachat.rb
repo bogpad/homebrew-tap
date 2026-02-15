@@ -9,24 +9,24 @@ class Meepachat < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/bogpad/meepa/releases/download/v0.1.0/meepa_0.1.0_darwin_arm64.tar.gz"
+      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.0/meepa_0.1.0_darwin_arm64.tar.gz"
       sha256 "ec336ac19980898cf4a51bc4b8eb9605e7e75b426e0bdfaceaaf03d1af35bdb2"
     end
 
     on_intel do
-      url "https://github.com/bogpad/meepa/releases/download/v0.1.0/meepa_0.1.0_darwin_amd64.tar.gz"
+      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.0/meepa_0.1.0_darwin_amd64.tar.gz"
       sha256 "66358feed4960d22181bc022859cebdcc832a36adcc8381ef0850391642f0a2f"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/bogpad/meepa/releases/download/v0.1.0/meepa_0.1.0_linux_arm64.tar.gz"
+      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.0/meepa_0.1.0_linux_arm64.tar.gz"
       sha256 "03433289daa94b16231e3d1b636fcba89aef1b17a8b18f2e4cd0ee5e2bef8832"
     end
 
     on_intel do
-      url "https://github.com/bogpad/meepa/releases/download/v0.1.0/meepa_0.1.0_linux_amd64.tar.gz"
+      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.0/meepa_0.1.0_linux_amd64.tar.gz"
       sha256 "5be5a381a9e2c9334b933905bc64d47b1952a674dd8316f951435911d0dd89a8"
     end
   end
