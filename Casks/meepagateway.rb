@@ -11,4 +11,9 @@ cask "meepagateway" do
   homepage "https://github.com/bogpad/meepa"
 
   binary "meepagateway"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{staged_path}/meepagateway"]
+  end
 end
