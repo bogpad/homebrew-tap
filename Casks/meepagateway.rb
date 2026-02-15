@@ -16,4 +16,21 @@ cask "meepagateway" do
     system_command "/usr/bin/xattr",
                    args: ["-dr", "com.apple.quarantine", "#{staged_path}/meepagateway"]
   end
+
+  caveats <<~EOS
+    To get started:
+
+      1. Create a config file:
+         meepagateway init
+
+      2. Edit meepa.toml with your LLM API key and chat platform credentials
+
+      3. Create a soul file for your bot's personality:
+         mkdir -p soul && echo '# Your bot personality' > soul/base.md
+
+      4. Run the gateway:
+         meepagateway --config meepa.toml
+
+    Docs: https://github.com/bogpad/meepa/tree/main/meepagateway
+  EOS
 end
