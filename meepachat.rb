@@ -27,14 +27,14 @@ class Meepachat < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bogpad/meepa/releases/download/v0.1.0-beta/meepachat_0.1.0-beta_linux_amd64.tar.gz"
+      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.0-beta/meepachat_0.1.0-beta_linux_amd64.tar.gz"
       sha256 "2c15c965fcc478fe3600de36167030432497d72dd69162e866b434736bf5ff4d"
       def install
         bin.install "meepachat"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bogpad/meepa/releases/download/v0.1.0-beta/meepachat_0.1.0-beta_linux_arm64.tar.gz"
+      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.0-beta/meepachat_0.1.0-beta_linux_arm64.tar.gz"
       sha256 "49a1acee4e5e286998b3ab16e1a3ca555064dce3217194da68194b4d314a5b9e"
       def install
         bin.install "meepachat"
