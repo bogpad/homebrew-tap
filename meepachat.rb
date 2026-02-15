@@ -9,7 +9,7 @@ class Meepachat < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bogpad/meepa/releases/download/v0.1.1/meepachat_0.1.1_darwin_amd64.tar.gz"
+      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.1/meepachat_0.1.1_darwin_amd64.tar.gz"
       sha256 "cdabbc39a22dc0563357b6ba4a785646028f1beb440033d8f5647d418090d8b1"
 
       def install
@@ -17,7 +17,7 @@ class Meepachat < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bogpad/meepa/releases/download/v0.1.1/meepachat_0.1.1_darwin_arm64.tar.gz"
+      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.1/meepachat_0.1.1_darwin_arm64.tar.gz"
       sha256 "3669be7bbff8d80986edc24ad753c557612c4908e8bd0f41aa9c07ea687c85e1"
 
       def install
@@ -28,14 +28,14 @@ class Meepachat < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bogpad/meepa/releases/download/v0.1.1/meepachat_0.1.1_linux_amd64.tar.gz"
+      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.1/meepachat_0.1.1_linux_amd64.tar.gz"
       sha256 "c36ea39d2a615b486f22b390cc04bfb5799bf6e4bad5b6798988c1e722504af5"
       def install
         bin.install "meepachat"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bogpad/meepa/releases/download/v0.1.1/meepachat_0.1.1_linux_arm64.tar.gz"
+      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.1/meepachat_0.1.1_linux_arm64.tar.gz"
       sha256 "0f3b43021390ed9ca950f41394395277d3d08e140679ee15e34424d9ea5deeac"
       def install
         bin.install "meepachat"
