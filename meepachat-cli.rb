@@ -5,20 +5,20 @@
 class MeepachatCli < Formula
   desc "MeepaChat CLI - Command-line client for MeepaChat"
   homepage "https://github.com/bogpad/meepa"
-  version "0.1.5"
+  version "0.1.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.5/meepachat-cli_0.1.5_darwin_amd64.tar.gz"
-      sha256 "ce67747c492c69e77c7a7345a7c54ddd3e2bdbf27d5d0904276cf1365fdd3f50"
+      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.6/meepachat-cli_0.1.6_darwin_amd64.tar.gz"
+      sha256 "01f9b0e6a6810cb049e2684a21693baf7064c7cfd5a32dc14516a06598facefb"
 
       def install
         bin.install "meepachat-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.5/meepachat-cli_0.1.5_darwin_arm64.tar.gz"
-      sha256 "141be1b96a37f8de556f60dddf49825549c5c69de010ac8a5f942188508db41b"
+      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.6/meepachat-cli_0.1.6_darwin_arm64.tar.gz"
+      sha256 "2d3936d232d87792194011553e46702ccf94bb4c3fee3e540da847f9f1332877"
 
       def install
         bin.install "meepachat-cli"
@@ -28,15 +28,15 @@ class MeepachatCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.5/meepachat-cli_0.1.5_linux_amd64.tar.gz"
-      sha256 "b79629bb97ffbbac5c46d5077a3d524f512351722b34b1a7de1780e27b336e8f"
+      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.6/meepachat-cli_0.1.6_linux_amd64.tar.gz"
+      sha256 "9c4e8af2dce0eb4fd839357cb04cc67435475c4a0e81f633884cf4a7fb2a396d"
       def install
         bin.install "meepachat-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.5/meepachat-cli_0.1.5_linux_arm64.tar.gz"
-      sha256 "432c112def910e4688d4bc506a8d5da811be29608c650ec29622e89d5c0ee936"
+      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.6/meepachat-cli_0.1.6_linux_arm64.tar.gz"
+      sha256 "9b223ae55842a36413d4108a964661febee46f3b76d37f26007ebd979618e9f9"
       def install
         bin.install "meepachat-cli"
       end
