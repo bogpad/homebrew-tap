@@ -5,20 +5,20 @@
 class Meepachat < Formula
   desc "MeepaChat - Self-hosted team chat server (Go + React + Zitadel)"
   homepage "https://github.com/bogpad/meepa"
-  version "0.1.8"
+  version "0.1.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.8/meepachat_0.1.8_darwin_amd64.tar.gz"
-      sha256 "5c78806fa473fc9330e8f920052e2cd0a511bb29d263c845f1c9cb40d522cfa9"
+      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.9/meepachat_0.1.9_darwin_amd64.tar.gz"
+      sha256 "77b8079318b8a705eea5a823922f0d502f1b1ab5b02043d68f0b23825e39492b"
 
       def install
         bin.install "meepachat"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.8/meepachat_0.1.8_darwin_arm64.tar.gz"
-      sha256 "c6e47b9508dde1ef6d8fba7e13dbad15ced99ec564a4d821ce44195944f8a13a"
+      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.9/meepachat_0.1.9_darwin_arm64.tar.gz"
+      sha256 "9ec66a15d414468a9b964cde1b7f9c246f1912387c96dd6ee7c96e5813d146c5"
 
       def install
         bin.install "meepachat"
@@ -28,15 +28,15 @@ class Meepachat < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.8/meepachat_0.1.8_linux_amd64.tar.gz"
-      sha256 "2995367372e9e26baa80bb37d539abd67720087d9d5f6802325038a483ba32b1"
+      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.9/meepachat_0.1.9_linux_amd64.tar.gz"
+      sha256 "7b36c35749858d0714335f0932fc14003ffb9fa0ead586e653b668037114539a"
       def install
         bin.install "meepachat"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.8/meepachat_0.1.8_linux_arm64.tar.gz"
-      sha256 "185312428b40f1b65fb39196cba9c680585853cd19e43469ac7b56bafb35de8d"
+      url "https://github.com/bogpad/homebrew-tap/releases/download/v0.1.9/meepachat_0.1.9_linux_arm64.tar.gz"
+      sha256 "0f1d685d468bb5d4da1e5a8ff5ea8022680a4b5efd02c9dc6c9b95cc77316097"
       def install
         bin.install "meepachat"
       end
