@@ -4,27 +4,27 @@
 class Meepagateway < Formula
   desc "MeepaGateway - Bot gateway for conversational AI agents"
   homepage "https://github.com/bogpad/meepa"
-  version "0.4.4"
+  version "0.4.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bogpad/meepagateway/releases/download/v0.4.4/meepagateway-0.4.4-macos-amd64.tar.gz"
-      sha256 "d02940e0e95ba0bdf466a180848c5db2a7f89ee94b4113038c197d5cd85204d9"
+      url "https://github.com/bogpad/meepagateway/releases/download/v0.4.5/meepagateway-0.4.5-macos-amd64.tar.gz"
+      sha256 "7c6a8e7784176be2d4f2a9ffe3589e883603a76be1c7f65e518e3c9b85da9178"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bogpad/meepagateway/releases/download/v0.4.4/meepagateway-0.4.4-macos-arm64.tar.gz"
-      sha256 "c2c72a3a97f1f95f7fb0665ea7acdb356dae792415e2ab78b34507ca24a3e333"
+      url "https://github.com/bogpad/meepagateway/releases/download/v0.4.5/meepagateway-0.4.5-macos-arm64.tar.gz"
+      sha256 "ce8460f9743c8c154f44cdb58016a20ffc7a90f808d3688023121f24c119a66f"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bogpad/meepagateway/releases/download/v0.4.4/meepagateway-0.4.4-linux-amd64.tar.gz"
-      sha256 "458fbe3e632a15dfa85a7e244171b5bfb2f6f6a38423ebb8b21e15468a7da70d"
+      url "https://github.com/bogpad/meepagateway/releases/download/v0.4.5/meepagateway-0.4.5-linux-amd64.tar.gz"
+      sha256 "eb54f3befd22dc384f280a56b4da8b223a2f58f79e9b6d950e306e821b83c3dc"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bogpad/meepagateway/releases/download/v0.4.4/meepagateway-0.4.4-linux-arm64.tar.gz"
-      sha256 "7499076ec7f913ccc07377fee49971589f3f55b320d8540939955992ddf09ecf"
+      url "https://github.com/bogpad/meepagateway/releases/download/v0.4.5/meepagateway-0.4.5-linux-arm64.tar.gz"
+      sha256 "bad9511d1f76ed66431be408287365bc38326f734b0f323d83d8432a46b47828"
     end
   end
 
