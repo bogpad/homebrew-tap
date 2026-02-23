@@ -4,27 +4,27 @@
 class Meepagateway < Formula
   desc "MeepaGateway - Bot gateway for conversational AI agents"
   homepage "https://github.com/bogpad/meepa"
-  version "0.4.45"
+  version "0.4.46"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bogpad/meepagateway/releases/download/v0.4.45/meepagateway-0.4.45-darwin-amd64.tar.gz"
-      sha256 "4b68b5123964d51fdd740d2c4ed6bea2ffea6452cce6d8bb3cb63068fe5fb90c"
+      url "https://github.com/bogpad/meepagateway/releases/download/v0.4.46/meepagateway-0.4.46-darwin-amd64.tar.gz"
+      sha256 "815cbe0cade5aedf702e5d6057e0c0f0f0a8c6c14cd01c9e879f3e0b1a06c07f"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bogpad/meepagateway/releases/download/v0.4.45/meepagateway-0.4.45-darwin-arm64.tar.gz"
-      sha256 "370baa0a034d19fc6fa8281407af9dfc56ef364b8503ed9d0e2af2bd5aef971a"
+      url "https://github.com/bogpad/meepagateway/releases/download/v0.4.46/meepagateway-0.4.46-darwin-arm64.tar.gz"
+      sha256 "b1f92d59e24a0bc0ebc631f4c6b55e805a6f2b1f4571bfc938e9e44d676b701e"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bogpad/meepagateway/releases/download/v0.4.45/meepagateway-0.4.45-linux-amd64.tar.gz"
-      sha256 "3feafccd9b0fefe1490243179b1d0bee87978d6d2e4031925f6409e04b731274"
+      url "https://github.com/bogpad/meepagateway/releases/download/v0.4.46/meepagateway-0.4.46-linux-amd64.tar.gz"
+      sha256 "5471efb346392f3293c9893fb05faf97d319131c400de9ee0c6de70462842d29"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bogpad/meepagateway/releases/download/v0.4.45/meepagateway-0.4.45-linux-arm64.tar.gz"
-      sha256 "00de1bac77fdf5fc9d32c54f6ad8540d8aa344bc6008820b0bde797a924f0371"
+      url "https://github.com/bogpad/meepagateway/releases/download/v0.4.46/meepagateway-0.4.46-linux-arm64.tar.gz"
+      sha256 "e4bb2683380d689936bf519d18bc6de84583e1429fccdb28c1d76a48d6fb6616"
     end
   end
 
