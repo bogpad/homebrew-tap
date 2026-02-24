@@ -5,20 +5,20 @@
 class MeepachatCli < Formula
   desc "MeepaChat CLI - Command-line client for MeepaChat"
   homepage "https://github.com/bogpad/meepa"
-  version "0.4.46"
+  version "0.4.47"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bogpad/meepachat/releases/download/v0.4.46/meepachat-cli_0.4.46_darwin_amd64.tar.gz"
-      sha256 "8066fd15c489c118bff6e60b328e75564aff129d3918a1ecd88cce84896d166d"
+      url "https://github.com/bogpad/meepachat/releases/download/v0.4.47/meepachat-cli_0.4.47_darwin_amd64.tar.gz"
+      sha256 "e9637f827575b773fdd0931273a11908ca4f9c70124d443669c354253adc5983"
 
       define_method(:install) do
         bin.install "meepachat-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bogpad/meepachat/releases/download/v0.4.46/meepachat-cli_0.4.46_darwin_arm64.tar.gz"
-      sha256 "a7fb093316c1d4fb11f78e669d888c0732ba16e5c6bd28797db51ee0d2e91a0f"
+      url "https://github.com/bogpad/meepachat/releases/download/v0.4.47/meepachat-cli_0.4.47_darwin_arm64.tar.gz"
+      sha256 "8fcfdf8eea68778dfb8fb08cc44aa7f01647a9efcd7bbb502c4a5a3d10e35d1d"
 
       define_method(:install) do
         bin.install "meepachat-cli"
@@ -28,15 +28,15 @@ class MeepachatCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bogpad/meepachat/releases/download/v0.4.46/meepachat-cli_0.4.46_linux_amd64.tar.gz"
-      sha256 "15c05431c203cddfc0c84df8480c91969236d730a25f72f4cf2400d7764720e5"
+      url "https://github.com/bogpad/meepachat/releases/download/v0.4.47/meepachat-cli_0.4.47_linux_amd64.tar.gz"
+      sha256 "5468b8655a356f800f6012dcc619d36e0f6c09f38fa3e6e83e310c0e6c9025bb"
       define_method(:install) do
         bin.install "meepachat-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bogpad/meepachat/releases/download/v0.4.46/meepachat-cli_0.4.46_linux_arm64.tar.gz"
-      sha256 "5863e8da35aa28cbbc6c222ecda9293413946b1936a310d0f6e8a80526458282"
+      url "https://github.com/bogpad/meepachat/releases/download/v0.4.47/meepachat-cli_0.4.47_linux_arm64.tar.gz"
+      sha256 "52a0581ecbf5dbc763add611f6e0ffca8702a56f852a0087e63e7570884a7ea9"
       define_method(:install) do
         bin.install "meepachat-cli"
       end
