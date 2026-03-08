@@ -10,7 +10,7 @@ class MeepachatCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/bogpad/meepachat/releases/download/v0.0.1/meepachat-cli_0.0.1_darwin_amd64.tar.gz"
-      sha256 "3cc3b6b44438fbf59bd6fffb1a069421b3b0bcf3e52f09a69804249de7a3732e"
+      sha256 "c7f7f5695233dd5e90c1fcd220b9671077b966750485111d16a4481adff8bf22"
 
       define_method(:install) do
         bin.install "meepachat-cli"
@@ -18,7 +18,7 @@ class MeepachatCli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/bogpad/meepachat/releases/download/v0.0.1/meepachat-cli_0.0.1_darwin_arm64.tar.gz"
-      sha256 "a682d4b07b3c60fc2c3abc0a4bf71c46a8dfbe46702e8d7b1d44a7afa8e60e66"
+      sha256 "80c00b505edad9372ff19703ad9bd8ab640745a11fc5fe4538aeccfc4d196269"
 
       define_method(:install) do
         bin.install "meepachat-cli"
@@ -29,14 +29,14 @@ class MeepachatCli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/bogpad/meepachat/releases/download/v0.0.1/meepachat-cli_0.0.1_linux_amd64.tar.gz"
-      sha256 "0b50a60ba96792fc41dc8d42f7710b95f85b395b56f75995a8aebc14450f2c92"
+      sha256 "2fa10f20e3fb3094d435f9fa649f83456d75dd8dbb868473d825d493e30aabfa"
       define_method(:install) do
         bin.install "meepachat-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/bogpad/meepachat/releases/download/v0.0.1/meepachat-cli_0.0.1_linux_arm64.tar.gz"
-      sha256 "6245ae422278a0a7ede510c988514d76d45a31048f2d8ff45f8032c41200ea4c"
+      sha256 "156aa256a0fed91c886077b524cb57a86a2b0bfea9a3d62182056ff26fcc1c7b"
       define_method(:install) do
         bin.install "meepachat-cli"
       end
