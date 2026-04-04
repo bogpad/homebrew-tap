@@ -5,20 +5,20 @@
 class Meepachat < Formula
   desc "MeepaChat - Self-hosted team chat server"
   homepage "https://github.com/bogpad/meepachat"
-  version "0.0.7"
+  version "0.0.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bogpad/meepachat/releases/download/v0.0.7/meepachat_0.0.7_darwin_amd64.tar.gz"
-      sha256 "b187a4db1b1594716da1f1a435c26af743fa71f842e0afdc8273ee3d6549fda9"
+      url "https://github.com/bogpad/meepachat/releases/download/v0.0.6/meepachat_0.0.6_darwin_amd64.tar.gz"
+      sha256 "d9943f428e349257c9c4c5d8fc29d2e33644795a6fc21c69e8bd8f6ce9943de5"
 
       define_method(:install) do
         bin.install "meepachat"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bogpad/meepachat/releases/download/v0.0.7/meepachat_0.0.7_darwin_arm64.tar.gz"
-      sha256 "f29696f8e893e3d494323da41968af6ed608ce6dd93d3ad2389c95ee15eadc57"
+      url "https://github.com/bogpad/meepachat/releases/download/v0.0.6/meepachat_0.0.6_darwin_arm64.tar.gz"
+      sha256 "17ad8dfa891c48f8d2bcc663b64abad5acd9bf57c1ea4442dd02d44f667ca4cd"
 
       define_method(:install) do
         bin.install "meepachat"
@@ -28,15 +28,15 @@ class Meepachat < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bogpad/meepachat/releases/download/v0.0.7/meepachat_0.0.7_linux_amd64.tar.gz"
-      sha256 "cdcb4b295b4dee41c14277995216de27abe5a10385e0bc9e55c9b2df881ec064"
+      url "https://github.com/bogpad/meepachat/releases/download/v0.0.6/meepachat_0.0.6_linux_amd64.tar.gz"
+      sha256 "b74f5e4d44a8b3e7d6aea680f3e7a9e8937981000591d92e5d0ea78056ebd1bf"
       define_method(:install) do
         bin.install "meepachat"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bogpad/meepachat/releases/download/v0.0.7/meepachat_0.0.7_linux_arm64.tar.gz"
-      sha256 "cb58d681046f3885a2ec0490757806738b79b0d22ebabe1ff6f300b00b4477ea"
+      url "https://github.com/bogpad/meepachat/releases/download/v0.0.6/meepachat_0.0.6_linux_arm64.tar.gz"
+      sha256 "48784ff606637dd3aa39502c2c961d6d279d0bb372f505a1b639b1c4aed06485"
       define_method(:install) do
         bin.install "meepachat"
       end
