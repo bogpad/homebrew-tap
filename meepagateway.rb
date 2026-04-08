@@ -9,22 +9,22 @@ class Meepagateway < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/bogpad/meepagateway/releases/download/v0.0.7/meepagateway-0.0.7-darwin-amd64.tar.gz"
-      sha256 "b9ddffeb3ac42c0aa590e641c477e92ca1f8bb8abd247be29c11c7e9d2929efc"
+      sha256 "5b74ee96704586d618ea2636d96a371c3869764dea046a6464bb52dad3ca69c1"
     end
     if Hardware::CPU.arm?
       url "https://github.com/bogpad/meepagateway/releases/download/v0.0.7/meepagateway-0.0.7-darwin-arm64.tar.gz"
-      sha256 "a22f686970cf29acf75ff9cbcf17c0dfe944ede4fffba436e6664b5425b4d8a6"
+      sha256 "48d8e6302b19323582cc2af29cfd23afef1b27641130040f5a387acda57f1e7a"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/bogpad/meepagateway/releases/download/v0.0.7/meepagateway-0.0.7-linux-amd64.tar.gz"
-      sha256 "14ebf66b08fe8cbecab86928e83ce52cf6e0c5d06d67a446ee3fc6eb98b70254"
+      sha256 "d78c0383a7dda207f03a1db6e9d89c5093792c1db9f6543c2719a88071cc15c9"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/bogpad/meepagateway/releases/download/v0.0.7/meepagateway-0.0.7-linux-arm64.tar.gz"
-      sha256 "ae76815492c64b80b4ece11bc5dc5820a493cd8c5ad34fa6b64d74c8cdcad1e1"
+      sha256 "89e56c72abc84f616cc172c6681db2f98a766a96bfe27f56e92a2f5622fb769c"
     end
   end
 
